@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<title>Login paget</title>
+</head>
+
+<script type="text/javascript">
+function display(form){
+if (form.username.value=="root") { 
+		if (form.password.value=="root") {              
+										location="page2.html" 
+											} else {
+													alert("Invalid Password")
+													}
+								} else {  alert("Invalid Username")
+										}
+						}
+			</script>			
+<body >
+<div class="form">
+    <img src="kabarak.jpeg" alt="kabarak logo">
+<form >
+<input type="text" placeholder="name" name="username" /><br><br>
+<input type="password" placeholder="password" name="password"/><br><br>
+<input type="button" value="Login" onClick="display(this.form)"/>
+</form>
+</div>
+<style>
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form{
+    margin: 30px;
+    top: 70px;
+    align-items: center;
+}
+input{
+    margin: 10px;
+}
+img {
+    margin: 20px;
+}
+</style>
+</body>
+</html>
